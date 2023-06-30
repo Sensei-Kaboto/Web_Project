@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Forms </title>
+
+    <style>
+        body{
+            background-color:beige;
+            margin: 25%;
+            color: black;
+            font-family: times,serif;
+        }
+        
+        .header{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+        }
+
+        .container{
+            background-color:lightpink;
+            border-color: black;
+            width:450px;
+            padding: 5px;
+        }
+        .head{
+            font-size: larger;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .left{
+            margin-left:18%;
+            
+        }
+        
+        .tx{
+            margin-left: 33%;
+        }
+        
+   
+    </style>
+</head>
+<body>
+   <form>
+    <fieldset class="container">
+            <h1 class="header"> Survey forms </h1><hr/>
+            <label class="head"> Customers Names: </label><br/><br/>
+            <label> Enter First Name <sup>*</sup> </label>
+            <label class="tx"> Enter Last Name <sup>*</sup> </label><br>
+                <input type="text" name="firstname" required>
+                <input  class="left" type="text" name="lastname" required><br/><br/>
+            <hr/>
+            <label class="head"> Address : </label><br/><br/>
+            <label> Street address <sup>*</sup> </label><br/>
+                <input  size="54px" type="text" name="address" required><br/><br/>
+            <label> Street address 2 </label><br>
+                <input size="54px"  type="text" name="address2" ><br/><br/>
+            <label> City </label>
+            <label  style="margin-left: 51%;"> State </label><br/>
+                <input type="text" name="city">
+                <input class="left" type="text" name="state"><br/><br/>
+            <label> Zip </label><br/>
+                <input type="text" name="zip" required><br/><br/>
+            <label> Select country </label><br/>
+                <select name="country" id="country" required>
+                    <option value=""> -- Select Country--</option>
+                    <option value=" Democratic Rep. of Congo"> Dem Rep of Congo </option>
+                    <option value=" Rwanda"> Rwanda</option>
+                    <option value=" Morocco"> Morocco</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value=" Turkey"> Turkey </option>
+
+                </select>
+            <hr/>
+
+            <label class="head"> Phone : </label><br/><br/>
+                <label> Contact  </label>
+                <label style="margin-left: 47%;"> Email </label><br/>
+                    <input type="tel" name="phone">
+                    <input class="left" type="email" name="email" required><br/><br/>
+            <hr/>
+
+        <label class="head"> Gender :</label><br/>
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+            <input type="radio" name="gender" id ="gender" value="others"> Others<br/><br/>
+        <hr/>
+        <label class="head"> Ratings :</label><br/><br/>
+            <label> Rating 1 : </label> 
+                <input type="radio" id="rat1" name="rat1" value="bad"> bad
+                <input type="radio" id="rat1" name="rat1" value="good"> Good
+                <input type="radio" id="rat1" name="rat1" value="Excelent"> Excelent
+        <br/><br/>
+
+            <label> Rating 1 : </label> 
+                <input type="radio" id="rat2" name="rat2" value="bad"> bad
+                <input type="radio" id="rat2" name="rat2" value="good"> Good
+                <input type="radio" id="rat2" name="rat2" value="Excelent"> Excelent
+        <br/><br/>
+
+            <label> Rating 1 : </label> 
+                <input type="radio" id="rat5" name="rat3" value="bad"> bad
+                <input type="radio" id="rat5" name="rat3" value="good"> Good
+                <input type="radio" id="rat5" name="rat3" value="Excelent"> Excelent
+        <br/><br/>
+
+            <label> Rating 1 : </label> 
+                <input type="radio" id="rat5" name="rat4" value="bad"> bad
+                <input type="radio" id="rat5" name="rat4" value="good"> Good
+                <input type="radio" id="rat5" name="rat4" value="Excelent"> Excelent
+        <br/><br/>
+      
+            <label> Rating 1 : </label> 
+                <input type="radio" id="rat5" name="rat5" value="bad"> bad
+                <input type="radio" id="rat5" name="rat5" value="good"> Good
+                <input type="radio" id="rat5" name="rat5" value="Excelent"> Excelent
+        <br/><br/>
+        <hr/>
+        <input style="background-color: darkred; color:yellow;" type="reset" name="reset" value="Reset">
+        <input type="submit" name="submit" value="Send">
+       
+
+    </fieldset>
+   </form>
+    
+</body>
+</html>
