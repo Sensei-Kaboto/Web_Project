@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Landings </title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            background-color: black;
+        }
+
+        .container{
+            max-width: 90rem;
+            margin: 2rem auto;
+            padding: 0px 2rem;
+        }
+
+        .img-fluid{
+            max-width: 100%;
+        }
+
+        .logo img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+            border: 4px red solid;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 3rem;
+            align-items: center;
+        }
+        
+        .items{
+            display:inline-flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 2rem;
+            
+        }
+
+        .link a:link {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        .link a:hover{
+            color: red !important;
+        }
+
+        button{
+            font-size: 2rem;
+            padding: 0.6rem 1rem;
+            font-weight: bold;
+            color: white;
+            background : linear-gradient(to right, #c31432, #892211);
+            cursor: pointer;
+            border:none;
+        }
+
+        button:hover{
+            background: white;
+            outline: 1px solid red;
+            color: red;
+            border: none;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info{
+            display:flex;
+            flex-direction: column;
+        }
+
+        .short-info{
+            color: red;
+            font-size: 1rem;
+            margin-bottom: 0.9rem;
+
+        }
+        .hero-heading{
+            font-size: 3rem;
+            margin-bottom: 0.3rem;
+        }
+        .hero-sub-heading{
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .users{
+            display: flex;
+            align-items:center;
+            margin: 1rem 0px;
+        }
+        .user{
+            width:35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid red;
+        }
+        .learn-more{
+            align-self: self-start;
+            margin-top: 3rem;
+            
+        }
+
+        
+        /*media  querries*/
+        @media only screen and(max-width:800px){
+            .items{
+                display: none;
+            }
+            .row {
+               grid-template-columns: 1fr;
+             }
+        .learn-more {
+                align-self: start;
+                margin: 1rem 0px;
+        }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <!-- For logo -->
+            <img  src="https://i.pinimg.com/236x/54/68/a3/5468a33bc43e258995f15ad01e5ad7cc.jpg" alt="logo">
+        </div>
+        <div class="items">
+            <a  class="active" href="#"> Home </a>
+            <a href="#"> Services </a>
+            <a href="#"> About </a>
+            <a href="#"> Contact </a>
+            <a href="#"> Blog </a>
+        </div>
+        <div class="other">
+            <button type="submit" > Log in </button>
+        </div>
+       
+    </nav>
+    
+    <!-- Hero section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="info">
+                    <p class="short-info"> #Get your 14 Days Free Trial </p>
+                    <h2 class="hero-heading">
+                        Manage All of Your Stuff Using A TGB
+                    </h2>
+                    <p class="hero-sub-heading">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Id tincidunt eifend odio viverra diam aliquet donec again.
+                    </p>
+                    <div class="users">
+                        <img  class="img-fluid user" src="https://i.pinimg.com/236x/0f/9a/6f/0f9a6f86e2806b20e766fd3ae2897257.jpg">
+                        <img class="img-fluid user" src="https://i.pinimg.com/564x/f0/f3/38/f0f338409d1c23b4426213498b90e02a.jpg">
+                        <img  class="img-fluid user" src="https://i.pinimg.com/236x/e1/f9/dc/e1f9dc269e6f773c2905bc28933ba474.jpg">
+                        <img class="img-fluid user" src="https://i.pinimg.com/236x/65/3b/96/653b96d144f36ae7cbca9870e57e3b32.jpg">
+                        
+                        <p> 4M+ users </p>
+                    </div>
+                        <button class="Learn-more"> Learn More </button>
+                </div>
+                <div class="hero-img">
+                    <img  src="https://i.pinimg.com/236x/95/e4/fb/95e4fb89e274ad3105d55f888fc8c571.jpg">
+                
+                </div>
+           
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
